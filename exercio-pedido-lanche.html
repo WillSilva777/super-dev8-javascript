@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Pedido de Lanche</title>
+</head>
+<body>
+
+    <h1>Monte seu Lanche</h1>
+
+    <div>
+        <label>Seu Nome:</label>
+        <input type="text" id="nomeCliente">
+    </div>
+
+    <h3>Tipo de Pão</h3>
+    <div>
+        <input type="radio" name="tipoPao" value="Frances">
+        <label>Francês</label>
+
+        <input type="radio" name="tipoPao" value="Integral">
+        <label>Integral</label>
+
+        <input type="radio" name="tipoPao" value="Brioche">
+        <label>Brioche</label>
+    </div>
+
+    <h3>Ingredientes</h3>
+    <div>
+        <input type="checkbox" class="ingrediente" value="Queijo">
+        <label>Queijo</label>
+
+        <input type="checkbox" class="ingrediente" value="Presunto">
+        <label>Presunto</label>
+
+        <input type="checkbox" class="ingrediente" value="Alface">
+        <label>Alface</label>
+
+        <input type="checkbox" class="ingrediente" value="Tomate">
+        <label>Tomate</label>
+    </div>
+
+    <br>
+    <button id="btnMontar">Montar Pedido</button>
+
+    <hr>
+
+    <div id="resultado"></div>
+
+    <script src="/assets/js/exercicio-pedido-lanche.js"></script>
+</body>
+</html>

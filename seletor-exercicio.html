@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Clientes</title>
+    <link rel="stylesheet" href="assets/css/seletor-exercicio.css">
+</head>
+
+<body>
+    <h1>Cadastro de Clientes</h1>
+
+    <div>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome">
+
+        <div name="opcaoPfPj">
+            <!-- sem checked -->
+            <input type="radio" id="pessoaFisica" name="tipoPessoa" value="pf">
+            <label for="pessoaFisica">Pessoa Física</label>
+
+            <input type="radio" id="pessoaJuridica" name="tipoPessoa" value="pj">
+            <label for="pessoaJuridica">Pessoa Jurídica</label>
+        </div>
+    </div>
+
+    <div id="tipo-pf" class="hidden">
+        <label for="cpf">CPF</label>
+        <input type="text" id="cpf">
+
+        <label for="rg">RG</label>
+        <input type="text" id="rg">
+
+        <label for="dataNascimento">Data de Nascimento</label>
+        <input type="date" id="dataNascimento">
+    </div>
+
+    <div id="tipo-pj" class="hidden">
+        <label for="cnpj">CNPJ</label>
+        <input type="text" id="cnpj">
+
+        <label for="razaoSocial">Razão Social</label>
+        <input type="text" id="razaoSocial">
+    </div>
+
+    <div class="card card-botoes">
+        <button id="btnRegistrar" type="button">Registrar</button>
+        <button id="btnVerCadastrados" type="button">Ver cadastrados</button>
+    </div>
+    
+
+    
+    <script src="assets/js/seletor-exercicio.js"></script>
+</body>
+
+</html>

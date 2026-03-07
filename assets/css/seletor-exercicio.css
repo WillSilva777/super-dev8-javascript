@@ -1,0 +1,186 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 28px 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+}
+
+/* Título */
+h1 {
+  text-align: center;
+  margin: 0 0 18px;
+  font-size: 26px;
+}
+
+/* Card do formulário (seu primeiro div é o "container") */
+body > div:first-of-type {
+  max-width: 560px;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
+}
+
+/* Labels e inputs */
+label {
+  display: block;
+  font-size: 14px;
+  margin: 10px 0 6px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="date"] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cfcfcf;
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+  background: #fff;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus {
+  border-color: #6aa8ff;
+  box-shadow: 0 0 0 3px rgba(106, 168, 255, 0.25);
+}
+
+/* Bloco de radios */
+div[name="opcaoPfPj"] {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 14px;
+  padding: 12px;
+  border: 1px dashed #d7d7d7;
+  border-radius: 12px;
+  background: #fafafa;
+}
+
+/* Deixa label dos radios na mesma linha */
+div[name="opcaoPfPj"] label {
+  display: inline;
+  margin: 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  transform: translateY(1px);
+  cursor: pointer;
+}
+
+/* Seções PF / PJ */
+#tipo-pf,
+#tipo-pj {
+  max-width: 560px;
+  margin: 14px auto 0;
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
+}
+
+/* Um “título” visual nas seções */
+#tipo-pf::before,
+#tipo-pj::before {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #111;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+}
+
+#tipo-pf::before { content: "Dados Pessoa Física"; }
+#tipo-pj::before { content: "Dados Pessoa Jurídica"; }
+
+/* Responsivo */
+@media (max-width: 520px) {
+  div[name="opcaoPfPj"] {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.hidden { display: none; }
+
+.card{
+  max-width: 560px;
+  margin: 0 auto 14px;
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 8px 18px rgba(0,0,0,.06);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.radios{
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  margin-top: 12px;
+  padding: 12px;
+  border: 1px solid #d7d7d7;
+  border-radius: 12px;
+  background: #fafafa;
+}
+
+label{ display:block; margin:10px 0 6px; }
+
+input[type="text"], input[type="date"]{
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cfcfcf;
+  border-radius: 10px;
+  outline: none;
+}
+
+button{
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  background: #2f6fed;
+  color: white;
+}
+
+button:hover{
+  filter: brightness(0.95);
+}
+
+pre{
+  background: #0f172a;
+  color: #e2e8f0;
+  padding: 12px;
+  border-radius: 12px;
+  overflow: auto;
+}
+
+.card-botoes{
+  display: flex;
+  gap: 10px;
+}
+
+.card-botoes button{
+  width: 100%;
+}

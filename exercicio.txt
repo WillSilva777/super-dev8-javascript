@@ -1,0 +1,25 @@
+/*
+    Ex. 1: Criar uma página de cadastro de pessoa.
+    Com os seguintes campos:
+    - Nome
+    - Tipo radios de PF e PJ
+    - CPF
+    - RG
+    - Data de Nascimento
+    - CNPJ
+    - Razão Social
+
+    Criar uma div com id tipo-pf, com os seguintes campos:
+        - CPF
+        - RG
+        - Data de Nascimento
+    Criar uma div com id tipo-pj, com os seguintes campos:
+        - CNPJ
+        - Razão Social
+    
+    Quando usuário escolher o tipo PF, deve apresentar os campos de PF
+    Quando usuário escolher o tipo PJ, deve apresentar os campos de PJ
+    Por padrão quando carregar a tale não deve apresentar os campos de PF e PJ, somente quando escolher o tipo
+
+
+*/
