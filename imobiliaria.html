@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Imoveis</title>
+    <link rel="stylesheet" href="assets/css/imobiliaria.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Cadastro de Imoveis a Venda</h1>
+
+        <section class="formulario">
+            <label for="campo-proprietario">Proprietario</label>
+            <input id="campo-proprietario" type="text" placeholder="Ex: Maria Souza">
+
+            <label for="campo-localidade">Localidade</label>
+            <input id="campo-localidade" type="text" placeholder="Ex: Centro">
+
+            <label for="campo-valor-imovel">Valor do Imovel</label>
+            <input id="campo-valor-imovel" type="number" min="0" step="0.01" placeholder="Ex: 250000">
+
+            <label for="campo-m2">Quantidade de m2</label>
+            <input id="campo-m2" type="number" min="0" step="0.01" placeholder="Ex: 120">
+
+            <label class="checkbox">
+                <input id="campo-construcao" type="checkbox">
+                Possui construcao?
+            </label>
+
+            <button id="botao-salvar" type="button">Salvar</button>
+        </section>
+
+        <section class="tabela-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Codigo</th>
+                        <th>Proprietario</th>
+                        <th>Localidade</th>
+                        <th>Valor Imovel</th>
+                        <th>Quantidade m2</th>
+                        <th>Valor m2</th>
+                        <th>Possui construcao?</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-imoveis"></tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="assets/js/imobiliaria.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/imobiliaria2.css">
+
+</head>
+
+<body>
+    <h1>Imobiliaria 2 irmãos</h1>
+
+    <div>
+        <label>Localidade</label>
+        <input type="text" id="localidade">
+
+        <label>Proprietário</label>
+        <input type="text" id="proprietario">
+
+        <label>Valor do imóvel</label>
+        <input type="text" id="valor-imovel">
+
+        <label>Quantidade de m² do imóvel</label>
+        <input type="text" id="quantidade-metro-quadrado">
+
+        <label>Possuí construção</label>
+        <select id="possui">
+            <option value="" disabled selected>Opção</option>
+            <option value="Sim">Sim</option>
+            <option value="Não">Não</option>
+        </select>
+
+    </div>
+
+    <button id="cadastrar">Cadastrar imóvel</button>
+
+    <h2>Imóveis cadastrados</h2>
+
+    <table>
+
+        <tbody id="tabela-imoveis">
+            <tr>
+                <td>Código</td>
+                <td>Localidade</td>
+                <td>Proprietário</td>
+                <td>Valor do Imóvel</td>
+                <td>Valor m²</td>
+                <td>M²</td>
+                <td>Construção</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <script src="assets/js/imobiliaria2.js"></script>
+</body>
+
+</html>

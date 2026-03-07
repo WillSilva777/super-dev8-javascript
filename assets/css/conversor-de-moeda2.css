@@ -1,0 +1,102 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+background:linear-gradient(135deg,#a8a8aa,#515152);
+min-height:100vh;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+}
+
+/* TÍTULO */
+
+h1{
+color:white;
+margin-bottom:30px;
+font-weight:600;
+}
+
+/* CARD PRINCIPAL */
+
+.formm-conversor,
+.conversao-moedas,
+#valor-convertido{
+background:white;
+width:380px;
+padding:20px;
+border-radius:14px;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+margin-bottom:15px;
+}
+
+/* INPUT */
+
+label{
+display:block;
+font-size:14px;
+margin-bottom:6px;
+color:#555;
+}
+
+input{
+width:100%;
+padding:12px;
+border-radius:8px;
+border:1px solid #ddd;
+font-size:16px;
+background:#fafafa;
+transition:0.2s;
+}
+
+input:focus{
+outline:none;
+border-color:#6a5cff;
+background:white;
+}
+
+/* BOTÕES DE MOEDA */
+
+.conversao-moedas{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:10px;
+}
+
+button{
+padding:12px;
+border:none;
+border-radius:8px;
+background:#38373f;
+color:white;
+font-size:14px;
+font-weight:500;
+cursor:pointer;
+transition:0.2s;
+}
+
+button:hover{
+background:#c8c6e0;
+transform:translateY(-2px);
+box-shadow:0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* RESULTADO */
+
+#valor-convertido{
+list-style:none;
+font-size:18px;
+text-align:center;
+font-weight:500;
+color:#333;
+}
+
+#valor-convertido li{
+padding:10px;
+border-bottom:1px solid #eee;
+}

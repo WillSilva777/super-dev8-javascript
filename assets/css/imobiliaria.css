@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+.container {
+    max-width: 900px;
+    margin: 24px auto;
+    background: #fff;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+.formulario {
+    display: grid;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.formulario input[type="text"],
+.formulario input[type="number"] {
+    padding: 8px;
+}
+
+.checkbox {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+#botao-salvar {
+    width: 120px;
+    padding: 8px;
+    border: 0;
+    background: #2563eb;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background: #efefef;
+}

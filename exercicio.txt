@@ -1,25 +1,46 @@
 /*
-    Ex. 1: Criar uma página de cadastro de pessoa.
-    Com os seguintes campos:
-    - Nome
-    - Tipo radios de PF e PJ
-    - CPF
-    - RG
-    - Data de Nascimento
-    - CNPJ
-    - Razão Social
+Ex.1: Criar um conversor de moedas, utilizando a tabela abaixo:
 
-    Criar uma div com id tipo-pf, com os seguintes campos:
-        - CPF
-        - RG
-        - Data de Nascimento
-    Criar uma div com id tipo-pj, com os seguintes campos:
-        - CNPJ
-        - Razão Social
-    
-    Quando usuário escolher o tipo PF, deve apresentar os campos de PF
-    Quando usuário escolher o tipo PJ, deve apresentar os campos de PJ
-    Por padrão quando carregar a tale não deve apresentar os campos de PF e PJ, somente quando escolher o tipo
+USD = 0.1907  # Dólar Americano
+EUR = 0.1641  # Euro
+GBP = 0.1422  # Libra Esterlina
+CAD = 0.2589  # Dólar Canadense
+JPY = 30.08   # Iene Japonês
+ARS = 270.75  # Peso Argentino
+CHF = 0.1481  # Franco Suíço
+CNY = 1.37    # Yuan Chinês
+
+O usuário deve poder digitar o valor em Reais e escolher utilizando botões qual será a moeda de conversão. Após realizar a conversão deve apresentar na lista não ordenada  (UL) da seguinte forma:
+"R$ 2000,00 => $381.4"
+
+Botões
+Botão de "Dólar Americano", "Euro", "Libra Esterlina", "Dólar Canadense", "Iene Japonês", "Peso Argentino", "Franco Suíço", "Yuan Chinês"
+
+Ex. 2: Criar uma verificador da quantidade strikes que a pessoa tomou.
+Campo para nick, campo para quantidade de strikes
+Pegar o valor dos campos, se a quantidade de strikes for 3, apresentar mensagem que o canal foi banido
+
+Ex. 3: Criar uma página para fazer o cadastro dos imóveis que estão a venda, para isso o usuário precisa poder preenhcer os seguintes campos:
+- Localidade
+- Proprietario
+- Valor do Imóvel
+- Quantidade de m² do imóvel
+- Possuí construção?
+
+Após o usuário preencher estes campos, fará o clique em um botão de Salvar, que chamará a função salvar. 
+
+Esta função salvar deve pegar o valor dos campos digitados, fazer o cálculo do valor pago por m², criar uma linha na tabela. 
+
+Cada linha deve conter as seguintes colunas na tabela:
+- Código
+- Localidade
+- Proprietario
+- Valor Imóvel
+- Quantidade m²
+- Valor m²
+- Possuí construção?
+
+Criar uma tabela para poder apresentar os imóveis cadastrados.
 
 
 */
