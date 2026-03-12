@@ -1,0 +1,228 @@
+/*
+Ex. 5: Criar uma página para fazer o cadastro de veículos de uma garagem.
+O usuário deve poder preencher os seguintes campos:
+- Modelo
+- Marca
+- Ano
+- Valor do veículo
+- Quantidade de portas
+
+Após preencher os campos, o usuário deverá clicar no botão Salvar, que chamará a função salvar.
+
+A função salvar deve pegar os valores digitados, calcular a idade do veículo com base no ano atual e criar uma linha na tabela.
+
+Cada linha da tabela deve conter as seguintes colunas:
+- Código
+- Modelo
+- Marca
+- Ano
+- Valor
+- Quantidade de portas
+- Idade do veículo
+
+Ex. 6: Criar uma página para cadastrar produtos de um mercado.
+O usuário deve poder preencher os seguintes campos:
+- Nome do produto
+- Categoria
+- Preço
+- Quantidade em estoque
+
+Após preencher os campos, deverá clicar no botão Salvar.
+
+A função salvar deve pegar os dados digitados, calcular o valor total em estoque daquele produto (preço * quantidade) e criar uma linha na tabela.
+
+Cada linha da tabela deve conter:
+- Código
+- Nome do produto
+- Categoria
+- Preço
+- Quantidade em estoque
+- Valor total em estoque
+
+Ex. 7: Criar uma página para fazer o cadastro de alunos.
+O usuário deve poder preencher os seguintes campos:
+- Nome do aluno
+- Nota 1
+- Nota 2
+- Nota 3
+
+Após preencher os campos, deverá clicar no botão Salvar.
+
+A função salvar deve pegar os valores digitados, calcular a média final do aluno e verificar sua situação.
+
+Se a média for maior ou igual a 7, apresentar "Aprovado".
+Se a média for menor que 7, apresentar "Reprovado".
+
+Cada linha da tabela deve conter:
+- Código
+- Nome do aluno
+- Nota 1
+- Nota 2
+- Nota 3
+- Média final
+- Situação
+
+Ex. 8: Criar uma página para cadastrar funcionários de uma empresa.
+O usuário deve poder preencher os seguintes campos:
+- Nome
+- Cargo
+- Salário
+- Quantidade de filhos
+
+Após preencher os campos, deverá clicar no botão Salvar.
+
+A função salvar deve pegar os dados digitados, calcular o valor do auxílio família.
+Caso tenha filhos, o funcionário receberá R$ 150 por filho.
+
+Também deverá calcular o salário final:
+salário + auxílio família
+
+Cada linha da tabela deve conter:
+- Código
+- Nome
+- Cargo
+- Salário
+- Quantidade de filhos
+- Auxílio família
+- Salário final
+
+Ex. 9: Criar uma página para fazer o cadastro de livros de uma biblioteca.
+O usuário deve poder preencher os seguintes campos:
+- Título do livro
+- Autor
+- Quantidade de páginas
+- Ano de publicação
+
+Após preencher os campos, deverá clicar no botão Salvar.
+
+A função salvar deve pegar os valores digitados, verificar se o livro é antigo ou recente.
+Se o livro tiver sido publicado antes de 2010, apresentar "Livro antigo".
+Caso contrário, apresentar "Livro recente".
+
+Cada linha da tabela deve conter:
+- Código
+- Título
+- Autor
+- Quantidade de páginas
+- Ano de publicação
+- Classificação
+
+Ex. 10: Criar uma página para cadastrar pedidos de uma lanchonete.
+O usuário deve poder preencher os seguintes campos:
+- Nome do cliente
+- Nome do lanche
+- Quantidade
+- Valor unitário
+
+Após preencher os campos, deverá clicar no botão Salvar.
+
+A função salvar deve pegar os valores digitados, calcular o valor total do pedido e criar uma linha na tabela.
+
+Cada linha da tabela deve conter:
+- Código
+- Nome do cliente
+- Nome do lanche
+- Quantidade
+- Valor unitário
+- Valor total do pedido
+
+Ex. 11: Criar uma página para cadastrar filmes.
+O usuário deve poder preencher os seguintes campos:
+- Nome do filme
+- Gênero
+- Duração em minutos
+- Faixa etária
+
+Após preencher os campos, deverá clicar no botão Salvar.
+
+A função salvar deve pegar os valores digitados e verificar se o filme é longo ou curto.
+Se a duração for maior ou igual a 120 minutos, apresentar "Filme longo".
+Caso contrário, apresentar "Filme curto".
+
+Cada linha da tabela deve conter:
+- Código
+- Nome do filme
+- Gênero
+- Duração
+- Faixa etária
+- Classificação de duração
+
+Ex. 12: Criar uma página para cadastrar aparelhos celulares.
+O usuário deve poder preencher os seguintes campos:
+- Marca
+- Modelo
+- Valor
+- Quantidade em estoque
+
+Após preencher os campos, deverá clicar no botão Salvar.
+
+A função salvar deve pegar os valores digitados, calcular o valor total em estoque e criar uma linha na tabela.
+
+Cada linha da tabela deve conter:
+- Código
+- Marca
+- Modelo
+- Valor
+- Quantidade em estoque
+- Valor total em estoque
+
+Ex. 13: Criar uma página para cadastrar viagens.
+O usuário deve poder preencher os seguintes campos:
+- Destino
+- Distância em quilômetros
+- Quantidade de passageiros
+- Valor da passagem
+
+Após preencher os campos, deverá clicar no botão Salvar.
+
+A função salvar deve pegar os valores digitados, calcular o valor total arrecadado com a viagem e criar uma linha na tabela.
+
+Cada linha da tabela deve conter:
+- Código
+- Destino
+- Distância em quilômetros
+- Quantidade de passageiros
+- Valor da passagem
+- Valor total arrecadado
+*/
+
+/*
+Ex. 9: Criar uma página para cálculo de salário de funcionário
+
+Criar uma página onde o usuário possa calcular o salário final de um funcionário.
+
+O usuário deverá preencher os seguintes campos:
+
+- Nome do funcionário
+- Salário base
+- Horas extras trabalhadas
+- Valor da hora extra
+
+Após preencher os campos, deverá clicar em um botão "Calcular".
+
+A função calcular deverá:
+
+- pegar os valores informados;
+- calcular o valor total das horas extras:
+
+  horas extras * valor da hora
+
+- calcular o salário final:
+
+  salário base + valor das horas extras
+
+Depois deverá calcular o desconto de imposto:
+
+  - Salário até R$2000 → sem imposto
+  - De R$2000 até R$5000 → 10%
+  - Acima de R$5000 → 20%
+
+Apresentar o resultado em uma tabela com as seguintes colunas:
+
+- Código
+- Nome do Funcionário
+- Salário Base
+- Valor Horas Extras
+- Imposto
+- Salário Final
+*/

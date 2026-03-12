@@ -1,0 +1,132 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Will Exercicios - Ancoras</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .rgb-hover {
+        border: 10px solid #1f2937;
+        border-radius: 0.75rem;
+        transition: transform 160ms ease, background 160ms ease, border-color 160ms ease;
+      }
+
+      .rgb-hover:hover {
+        border-color: transparent;
+        background:
+          linear-gradient(#0f172a, #0f172a) padding-box,
+          linear-gradient(
+            120deg,
+            #ff2a6d,
+            #ff9f1c,
+            #ffee32,
+            #3cff99,
+            #2de2e6,
+            #1f6feb,
+            #9d4edd,
+            #ff2a6d
+          ) border-box;
+        background-size: 100% 100%, 300% 300%;
+        animation: rgb-shift 2.4s linear infinite;
+      }
+
+      @keyframes rgb-shift {
+        to {
+          background-position: 0 0, 300% 0;
+        }
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-slate-950 text-slate-100">
+    <main class="mx-auto max-w-2xl px-6 py-12">
+      <h1 class="text-3xl font-semibold tracking-tight">Exercicios</h1>
+      <p class="mt-2 text-slate-300">
+        Dez exemplos de Exercicios de Javascript.
+      </p>
+
+      <section class="mt-8 space-y-3">
+        <a
+          class="rgb-hover group flex items-center justify-between rounded-xl border bg-slate-900/60 px-4 py-3 text-slate-100 transition hover:-translate-y-0.5 hover:bg-slate-900"
+          href="./exercicios/exercicio-1.html"
+        >
+          <span>Exercicio 1</span>
+          <span class="text-cyan-300 group-hover:text-cyan-200">#</span>
+        </a>
+
+        <a
+          class="rgb-hover group flex items-center justify-between rounded-xl border bg-slate-900/60 px-4 py-3 text-slate-100 transition hover:-translate-y-0.5 hover:bg-slate-900"
+          href="./exercicios/exercicio-2.html"
+        >
+          <span>Exercicio 2</span>
+          <span class="text-emerald-300 group-hover:text-emerald-200">#</span>
+        </a>
+
+        <a
+          class="rgb-hover group flex items-center justify-between rounded-xl border bg-slate-900/60 px-4 py-3 text-slate-100 transition hover:-translate-y-0.5 hover:bg-slate-900"
+          href="./exercicios/exercicio-3.html"
+        >
+          <span>Exercicio 3</span>
+          <span class="text-amber-300 group-hover:text-amber-200">#</span>
+        </a>
+
+        <a
+          class="rgb-hover group flex items-center justify-between rounded-xl border bg-slate-900/60 px-4 py-3 text-slate-100 transition hover:-translate-y-0.5 hover:bg-slate-900"
+          href="./exercicios/exercicio-4.html"
+        >
+          <span>Exercicio 4</span>
+          <span class="text-fuchsia-300 group-hover:text-fuchsia-200">#</span>
+        </a>
+
+        <a
+          class="rgb-hover group flex items-center justify-between rounded-xl border bg-slate-900/60 px-4 py-3 text-slate-100 transition hover:-translate-y-0.5 hover:bg-slate-900"
+          href="./exercicios/exercicio-5.html"
+        >
+          <span>Exercicio 5</span>
+          <span class="text-rose-300 group-hover:text-rose-200">#</span>
+        </a>
+
+        <a
+          class="rgb-hover group flex items-center justify-between rounded-xl border bg-slate-900/60 px-4 py-3 text-slate-100 transition hover:-translate-y-0.5 hover:bg-slate-900"
+          href="./exercicios/exercicio-6.html"
+        >
+          <span>Exercicio 6</span>
+          <span class="text-sky-300 group-hover:text-sky-200">#</span>
+        </a>
+
+        <a
+          class="rgb-hover group flex items-center justify-between rounded-xl border bg-slate-900/60 px-4 py-3 text-slate-100 transition hover:-translate-y-0.5 hover:bg-slate-900"
+          href="./exercicios/exercicio-7.html"
+        >
+          <span>Exercicio 7</span>
+          <span class="text-lime-300 group-hover:text-lime-200">#</span>
+        </a>
+
+        <a
+          class="rgb-hover group flex items-center justify-between rounded-xl border bg-slate-900/60 px-4 py-3 text-slate-100 transition hover:-translate-y-0.5 hover:bg-slate-900"
+          href="./exercicios/exercicio-8.html"
+        >
+          <span>Exercicio 8</span>
+          <span class="text-orange-300 group-hover:text-orange-200">#</span>
+        </a>
+
+        <a
+          class="rgb-hover group flex items-center justify-between rounded-xl border bg-slate-900/60 px-4 py-3 text-slate-100 transition hover:-translate-y-0.5 hover:bg-slate-900"
+          href="./exercicios/exercicio-9.html"
+        >
+          <span>Exercicio 9</span>
+          <span class="text-teal-300 group-hover:text-teal-200">#</span>
+        </a>
+
+        <a
+          class="rgb-hover group flex items-center justify-between rounded-xl border bg-slate-900/60 px-4 py-3 text-slate-100 transition hover:-translate-y-0.5 hover:bg-slate-900"
+          href="./exercicios/exercicio-10.html"
+        >
+          <span>Exercicio 10</span>
+          <span class="text-yellow-300 group-hover:text-yellow-200">#</span>
+        </a>
+      </section>
+
+    </main>
+  </body>
+</html>
