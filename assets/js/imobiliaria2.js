@@ -21,7 +21,7 @@ function cadastrarImovel() {
     const construcao = campoSelect.value;
     const precoM2 = calcularM2(valor, metro)
 
-    if (proprietario === "") {
+    if (dono === "") {
         alert("Informe o proprietario.");
         return;
     }
